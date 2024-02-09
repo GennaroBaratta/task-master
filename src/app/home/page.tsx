@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 const HomePage: React.FC = () => {
     return (
@@ -46,11 +47,11 @@ const HomePage: React.FC = () => {
             <div className="grow shrink basis-0 flex-col justify-start items-start gap-6 inline-flex">
               <div className="w-12 h-12 relative" />
               <div className="self-stretch h-56 flex-col justify-start items-start gap-6 flex">
-                <div className="self-stretch text-black text-4xl font-bold font-['Roboto'] leading-10">Experience the power of a solo software engineer's expertise and innovation.</div>
+                <div className="self-stretch text-black text-4xl font-bold font-['Roboto'] leading-10">Experience the power of a solo software engineer&apos;s expertise and innovation.</div>
                 <div className="self-stretch text-black text-lg font-normal font-['Roboto'] leading-relaxed">With a deep understanding of Nextjs, .Net, and a passion for web automation, our solo software engineer brings cutting-edge solutions to your projects.</div>
               </div>
             </div>
-            <img className="grow shrink basis-0 h-96" src="https://via.placeholder.com/616x640" />
+            <Image className="grow shrink basis-0 h-96" src="https://via.placeholder.com/616x640" alt={''} />
           </div>
         </div>
         <div className="h-96 px-16 py-28 bg-white flex-col justify-start items-center gap-20 flex">
@@ -64,21 +65,21 @@ const HomePage: React.FC = () => {
           <div className="self-stretch h-96 flex-col justify-start items-center gap-12 flex">
             <div className="w-96 justify-center items-start gap-12 inline-flex">
               <div className="grow shrink basis-0 flex-col justify-start items-start gap-8 inline-flex">
-                <img className="self-stretch h-60" src="https://via.placeholder.com/405x240" />
+                <Image className="self-stretch h-60" src="https://via.placeholder.com/405x240" alt={''} />
                 <div className="self-stretch h-28 flex-col justify-start items-center gap-6 flex">
                   <div className="self-stretch text-center text-black text-3xl font-bold font-['Roboto'] leading-10">Nextjs Development</div>
                   <div className="self-stretch text-center text-black text-base font-normal font-['Roboto'] leading-normal">Building dynamic and responsive web applications with Nextjs.</div>
                 </div>
               </div>
               <div className="grow shrink basis-0 flex-col justify-start items-start gap-8 inline-flex">
-                <img className="self-stretch h-60" src="https://via.placeholder.com/405x240" />
+                <Image className="self-stretch h-60" src="https://via.placeholder.com/405x240" alt={''} />
                 <div className="self-stretch h-28 flex-col justify-start items-center gap-6 flex">
                   <div className="self-stretch text-center text-black text-3xl font-bold font-['Roboto'] leading-10">.Net Development</div>
                   <div className="self-stretch text-center text-black text-base font-normal font-['Roboto'] leading-normal">Leveraging the power of .Net to create robust and scalable solutions.</div>
                 </div>
               </div>
               <div className="grow shrink basis-0 flex-col justify-start items-start gap-8 inline-flex">
-                <img className="self-stretch h-60" src="https://via.placeholder.com/405x240" />
+                <Image className="self-stretch h-60" src="https://via.placeholder.com/405x240" alt={''} />
                 <div className="self-stretch h-28 flex-col justify-start items-center gap-6 flex">
                   <div className="self-stretch text-center text-black text-3xl font-bold font-['Roboto'] leading-10">Automation Expertise</div>
                   <div className="self-stretch text-center text-black text-base font-normal font-['Roboto'] leading-normal">Implementing automation techniques to streamline workflows and improve efficiency.</div>
@@ -132,7 +133,7 @@ const HomePage: React.FC = () => {
                 </div>
               </div>
             </div>
-            <img className="grow shrink basis-0 h-96" src="https://via.placeholder.com/616x640" />
+            <Image className="grow shrink basis-0 h-96" src="https://via.placeholder.com/616x640" alt={''} />
           </div>
         </div>
         <div className="h-96 px-16 py-28 bg-white flex-col justify-start items-start gap-20 flex">
@@ -247,7 +248,7 @@ const HomePage: React.FC = () => {
               <div className="justify-start items-start gap-1 inline-flex" />
               <div className="self-stretch text-black text-xl font-bold font-['Roboto'] leading-7">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
               <div className="flex-col justify-start items-start gap-4 flex">
-                <img className="w-14 h-14 rounded-full" src="https://via.placeholder.com/56x56" />
+                <Image className="w-14 h-14 rounded-full" src="https://via.placeholder.com/56x56" alt={''} />
                 <div className="flex-col justify-start items-start flex">
                   <div className="text-black text-base font-semibold font-['Roboto'] leading-normal">John Doe</div>
                   <div className="text-black text-base font-normal font-['Roboto'] leading-normal">CEO, ABC Company</div>
@@ -259,7 +260,7 @@ const HomePage: React.FC = () => {
               <div className="justify-start items-start gap-1 inline-flex" />
               <div className="self-stretch text-black text-xl font-bold font-['Roboto'] leading-7">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
               <div className="flex-col justify-start items-start gap-4 flex">
-                <img className="w-14 h-14 rounded-full" src="https://via.placeholder.com/56x56" />
+                <Image className="w-14 h-14 rounded-full" src="https://via.placeholder.com/56x56" alt={''} />
                 <div className="flex-col justify-start items-start flex">
                   <div className="text-black text-base font-semibold font-['Roboto'] leading-normal">Jane Smith</div>
                   <div className="text-black text-base font-normal font-['Roboto'] leading-normal">CTO, XYZ Corporation</div>
@@ -271,7 +272,7 @@ const HomePage: React.FC = () => {
               <div className="justify-start items-start gap-1 inline-flex" />
               <div className="self-stretch text-black text-xl font-bold font-['Roboto'] leading-7">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
               <div className="flex-col justify-start items-start gap-4 flex">
-                <img className="w-14 h-14 rounded-full" src="https://via.placeholder.com/56x56" />
+                <Image className="w-14 h-14 rounded-full" src="https://via.placeholder.com/56x56" alt={''} />
                 <div className="flex-col justify-start items-start flex">
                   <div className="text-black text-base font-semibold font-['Roboto'] leading-normal">Mark Johnson</div>
                   <div className="text-black text-base font-normal font-['Roboto'] leading-normal">COO, PQR Industries</div>
@@ -311,7 +312,7 @@ const HomePage: React.FC = () => {
               <div className="self-stretch h-32 flex-col justify-start items-start gap-6 flex">
                 <div className="self-stretch h-20 flex-col justify-start items-start gap-4 flex">
                   <div className="self-stretch text-black text-3xl font-bold font-['Roboto'] leading-10">Email</div>
-                  <div className="self-stretch text-black text-base font-normal font-['Roboto'] leading-normal">We're here to help and provide solutions for your needs.</div>
+                  <div className="self-stretch text-black text-base font-normal font-['Roboto'] leading-normal">We&apos;re here to help and provide solutions for your needs.</div>
                 </div>
                 <div className="self-stretch text-black text-base font-normal font-['Roboto'] underline leading-normal">info@company.com</div>
               </div>

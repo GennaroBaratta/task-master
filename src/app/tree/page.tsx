@@ -10,7 +10,7 @@ import { TextGeometry } from 'three-stdlib';
 const ThreeScene: React.FC = () => {
     const boxGrid = [...Array(10).keys()].map((i) => {
         return [...Array(10).keys()].map((j) => {
-            return <MyBox props={{ position: [i, j, 0] }} size={[i*Math.PI/6,1,1]} />
+            return <MyBox key={(i+10)*j} props={{ position: [i, j, 0] }} size={[i*Math.PI/6,1,1]} />
         });
     }
     );
@@ -60,7 +60,7 @@ const ThreeScene: React.FC = () => {
 // }
 
 function MyBox({ props, size = [1, 1, 1] }: { props: MeshProps, size: [number, number, number] }) {
-    const boxRef = useRef(null);
+    const boxRef = useRef<Mesh<BufferGeometry<NormalBufferAttributes>, Material | Material[], Object3DEventMap>>(null);
 
 
     // useFrame((_, delta) => {

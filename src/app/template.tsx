@@ -9,7 +9,7 @@ export default function Template({ children }: { children: React.ReactNode }) {
 
   useEffect(() => {
     animatePageIn(window.location.href, router);
-  }, []);
+  });
 
   return (
     <div>

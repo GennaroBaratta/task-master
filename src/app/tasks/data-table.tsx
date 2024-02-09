@@ -16,7 +16,6 @@ import {
     TableHeader,
     TableRow,
 } from "~/app/components/ui/table"
-import { Table as TableType } from "@tanstack/react-table"
 import columns from "./columns"
 import { Dispatch, SetStateAction, useEffect, useState } from "react"
 import { Task } from "@prisma/client"
@@ -133,6 +132,7 @@ export function DataTable({ data }: { data: Task[] }) {
     const [, setData] = useState<Task[]>(data)
     const updateMutation = api.task.update.useMutation({
         onSuccess: () => {
+            console.log('success');
 
         }
     })

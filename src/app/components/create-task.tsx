@@ -6,7 +6,6 @@ import { useState } from "react";
 import { api } from "~/trpc/react";
 
 export function CreateTask() {
-  const router = useRouter();
   const [title, setTitle] = useState("");
 
   const createPost = api.task.create.useMutation({

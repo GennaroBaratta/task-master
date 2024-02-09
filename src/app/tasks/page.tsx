@@ -8,7 +8,7 @@ import { Task } from '@prisma/client';
 
 export default async function TaskListPage() {
 
-    const tasks: Task[] = await api.task.getAll.query({});
+    const tasks: Task[] = await api.task.getAll.query({ userIdz: undefined });
 
     return (
         <div className="container mx-auto px-4">

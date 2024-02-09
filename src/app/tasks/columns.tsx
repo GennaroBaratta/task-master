@@ -1,9 +1,10 @@
 import { Task } from "@prisma/client"
 import { useMutation } from "@tanstack/react-query";
-import { ColumnDef, createColumnHelper } from "@tanstack/react-table"
+import { CellContext, ColumnDef, createColumnHelper } from "@tanstack/react-table"
 import { Row } from "@tanstack/react-table";
 import { api } from "~/trpc/react";
 import TasksTableCell from "./cell";
+
 
 const columns: ColumnDef<Task>[] = [
     {
@@ -19,6 +20,7 @@ const columns: ColumnDef<Task>[] = [
         cell: ({ row }) => {
             const check = api.task.update.useMutation({
                 onSuccess: () => {
+                    console.log('success');
 
                 }
             })

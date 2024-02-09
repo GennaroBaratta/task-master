@@ -1,5 +1,6 @@
 import gsap from 'gsap'
-import { AppRouterInstance } from 'next/dist/shared/lib/app-router-context.shared-runtime';
+import type { AppRouterInstance } from 'next/dist/shared/lib/app-router-context.shared-runtime';
+import type { Mesh, BufferGeometry, NormalBufferAttributes, Material, Object3DEventMap } from 'three';
 
 export const animatePageIn = (href: string, router: AppRouterInstance) => {
   const t = animatePageOut(href, router);
@@ -59,7 +60,7 @@ export const animatePageOut = (href: string, router: AppRouterInstance) => {
   }
 };
 
-export const spin = (mesh: any, delta: number) => {
+export const spin = (mesh: Mesh<BufferGeometry<NormalBufferAttributes>, Material | Material[], Object3DEventMap>, delta: number) => {
 
   gsap.to(mesh.rotation, { y: mesh.rotation.y + (Math.PI / 2) * delta, duration: 1 });
 

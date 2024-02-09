@@ -1,3 +1,4 @@
+import type { PrismaPromise } from "@prisma/client";
 import { z } from "zod";
 
 import {
@@ -32,7 +33,13 @@ export const taskRouter = createTRPCRouter({
         ;
 
       if (cache.has(cacheKey)) {
-        return cache.get(cacheKey);
+        return cache.get(cacheKey)  as PrismaPromise<{
+          id: number;
+          title: string;
+          description: string;
+          status: string;
+          userId: string;
+      }[]>;
       }
       const data = ctx.db.task.findMany({
         where: { user: { id: !!input.userIdz ? ctx?.session?.user.id : input.userIdz } },

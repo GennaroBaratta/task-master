@@ -11,7 +11,7 @@ export class Cache<T> {
         return this.store.get(key);
     }
 
-    set(key: string, value: T, ttl: number = 300000): void { // Default TTL 5 minutes
+    set(key: string, value: T, ttl: 300000): void { // Default TTL 5 minutes
         this.store.set(key, value);
         setTimeout(() => this.store.delete(key), ttl);
     }
@@ -21,5 +21,5 @@ export class Cache<T> {
     }
 }
 
-const cache = new Cache<any>();
+const cache = new Cache<object>();
 export default cache;
