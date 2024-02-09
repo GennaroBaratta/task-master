@@ -143,43 +143,43 @@ class StateMachine {
     },
   };
   
-  const drilldownMachine = new StateMachine(drilldownConfig);
-  drilldownMachine.expandCompressManager("AAA");
-  console.log("State after toggleAggregate:", {
-    state: drilldownMachine.currentState,
-    context: drilldownMachine.context,
-  });
-  drilldownMachine.toggleAggregate("RM");
-  console.log("State after toggleAggregate:", {
-    state: drilldownMachine.currentState,
-    context: drilldownMachine.context,
-  });
-  drilldownMachine.expandCompressManager("AAA");
-  console.log("State after toggleAggregate:", {
-    state: drilldownMachine.currentState,
-    context: drilldownMachine.context,
-  });
-  drilldownMachine.toggleAggregate("GM");
-  console.log("State after toggleAggregate:", {
-    state: drilldownMachine.currentState,
-    context: drilldownMachine.context,
-  });
+  // const drilldownMachine = new StateMachine(drilldownConfig);
+  // drilldownMachine.expandCompressManager("AAA");
+  // console.log("State after toggleAggregate:", {
+  //   state: drilldownMachine.currentState,
+  //   context: drilldownMachine.context,
+  // });
+  // drilldownMachine.toggleAggregate("RM");
+  // console.log("State after toggleAggregate:", {
+  //   state: drilldownMachine.currentState,
+  //   context: drilldownMachine.context,
+  // });
+  // drilldownMachine.expandCompressManager("AAA");
+  // console.log("State after toggleAggregate:", {
+  //   state: drilldownMachine.currentState,
+  //   context: drilldownMachine.context,
+  // });
+  // drilldownMachine.toggleAggregate("GM");
+  // console.log("State after toggleAggregate:", {
+  //   state: drilldownMachine.currentState,
+  //   context: drilldownMachine.context,
+  // });
   
-  drilldownMachine.toggleAggregate("GM");
-  console.log("State after toggleAggregate:", {
-    state: drilldownMachine.currentState,
-    context: drilldownMachine.context,
-  });
+  // drilldownMachine.toggleAggregate("GM");
+  // console.log("State after toggleAggregate:", {
+  //   state: drilldownMachine.currentState,
+  //   context: drilldownMachine.context,
+  // });
   
-  drilldownMachine.search("John");
-  console.log("State after toggleAggregate:", {
-    state: drilldownMachine.currentState,
-    context: drilldownMachine.context,
-  });
+  // drilldownMachine.search("John");
+  // console.log("State after toggleAggregate:", {
+  //   state: drilldownMachine.currentState,
+  //   context: drilldownMachine.context,
+  // });
   
-  drilldownMachine.search();
-  console.log("State after toggleAggregate:", {
-    state: drilldownMachine.currentState,
-    context: drilldownMachine.context,
-  });
+  // drilldownMachine.search();
+  // console.log("State after toggleAggregate:", {
+  //   state: drilldownMachine.currentState,
+  //   context: drilldownMachine.context,
+  // });
   

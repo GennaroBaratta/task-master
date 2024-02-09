@@ -1,13 +1,21 @@
 import "~/styles/globals.css";
 
-import { Inter } from "next/font/google";
+import { Inter, Roboto } from "next/font/google";
 import { cookies } from "next/headers";
 
 import { TRPCReactProvider } from "~/trpc/react";
+import { cn } from "~/lib/utils";
 
 const inter = Inter({
   subsets: ["latin"],
   variable: "--font-sans",
+});
+
+const roboto = Roboto({
+  weight: ["400", "500", "700"],
+  subsets: ["latin"],
+  variable: "--font-roboto",
+  style: "normal",
 });
 
 export const metadata = {
@@ -23,7 +31,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`font-sans ${inter.variable}`}>
+      <body className={cn(
+        "min-h-screen bg-background font-roboto antialiased",
+        roboto.variable
+      )}>
         <TRPCReactProvider cookies={cookies().toString()}>
           {children}
         </TRPCReactProvider>

@@ -1,7 +1,6 @@
 // app/page.task.[id].tsx
 
 import Link from 'next/link';
-import { getServerAuthSession } from '~/server/auth';
 import { api } from '~/trpc/server';
 
 export default async function TaskDetailsPage({ params }: { params: { id: string } }) {
